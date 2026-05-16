@@ -1,0 +1,60 @@
+<!-- notes-en.html (English) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #e6edf3;
+            background: #0d1117;
+            padding: 25px;
+            margin: 0;
+        }
+        .container { max-width: 500px; margin: auto; }
+        h2 { color: #ffffff; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 20px; font-size: 22px; }
+        h3 { color: #e6edf3; font-size: 15px; margin-top: 28px; margin-bottom: 12px; }
+        .badge {
+            background: #1A8FA0; color: white; padding: 4px 10px;
+            border-radius: 12px; font-size: 11px; font-weight: bold;
+            text-transform: uppercase; margin-bottom: 10px;
+            display: inline-block; letter-spacing: 0.04em;
+        }
+        .badge.secondary {
+            background: #172028; color: #8b949e;
+            border: 1px solid #1e2d3d; margin-top: 20px;
+        }
+        ul { padding-left: 20px; list-style-type: none; }
+        li { margin-bottom: 15px; position: relative; color: #8b949e; }
+        li::before { content: "•"; color: #1A8FA0; font-weight: bold; position: absolute; left: -20px; }
+        strong { color: #e6edf3; }
+        .previous { opacity: 0.75; }
+        .footer {
+            margin-top: 30px; border-top: 1px solid #1e2d3d;
+            padding-top: 15px; font-size: 12px; color: #8b949e; text-align: center;
+        }
+        .footer em { color: #30363d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="badge">What's New</div>
+        <h2>Foldwise 1.0</h2>
+
+        <ul>
+            <li><strong>Real-Time Folder Monitoring:</strong> Watched folders are tracked continuously using FSEvents. Rules fire the instant a new file appears — no delay, no polling.</li>
+            <li><strong>Visual Rule Engine:</strong> Build automations using conditions on file type, name, extension, size, date, and readable text inside PDFs. Combine them with AND/OR logic.</li>
+            <li><strong>Safe Preview Mode:</strong> Before enabling any rule, see exactly what would happen — file by file, action by action. No surprises.</li>
+            <li><strong>Full Activity Log &amp; Undo:</strong> Every action is recorded with a timestamp and path. Supported actions can be undone directly from the log.</li>
+            <li><strong>Scheduled Rules:</strong> Run automatic cleanups on a daily, weekly, or custom schedule — perfect for batch archiving and periodic maintenance.</li>
+            <li><strong>Private On-Device AI:</strong> Analyzes a folder and suggests ready-to-use rules based on what it finds. Everything runs on your Mac, nothing is uploaded. (macOS 26+)</li>
+        </ul>
+
+        <div class="footer">
+            Released May 14, 2026 • Thank you for choosing Foldwise!<br>
+            <em>We are committed to improving Foldwise regularly — more stability, more power, and a calmer Mac experience.</em>
+        </div>
+    </div>
+</body>
+</html>
