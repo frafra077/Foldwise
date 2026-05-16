@@ -2,6 +2,9 @@ const galleryItems = document.querySelectorAll(".gallery-item");
 const lightbox = document.querySelector(".lightbox");
 const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 const languageButtons = document.querySelectorAll(".language-switcher button");
+const siteHeader = document.querySelector(".site-header");
+const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+const headerActions = document.querySelector(".header-actions");
 let progressTicking = false;
 
 const pageCopy = {
@@ -17,6 +20,7 @@ const pageCopy = {
       ".nav a:nth-child(5)": "Contatti",
       ".nav a:nth-child(6)": "FAQ",
       ".nav-cta": "Acquista Licenza",
+      ".mobile-menu-toggle span": "Menu",
       ".hero-lead": "Il sistema elegante per macOS che riordina Desktop, Download e cartelle di lavoro mentre tu pensi ad altro.",
       ".hero-actions .primary": "Acquista Licenza",
       ".hero-actions .secondary": "Scarica gratis",
@@ -191,6 +195,7 @@ const pageCopy = {
       ".nav a:nth-child(5)": "Contact",
       ".nav a:nth-child(6)": "FAQ",
       ".nav-cta": "Buy License",
+      ".mobile-menu-toggle span": "Menu",
       ".hero-lead": "The elegant macOS system that organizes Desktop, Downloads, and work folders while you focus on everything else.",
       ".hero-actions .primary": "Buy License",
       ".hero-actions .secondary": "Download free",
@@ -396,6 +401,37 @@ languageButtons.forEach((button) => {
 });
 
 applyLanguage(initialLanguage);
+
+const closeMobileMenu = () => {
+  if (!siteHeader || !mobileMenuToggle) return;
+
+  siteHeader.classList.remove("is-menu-open");
+  mobileMenuToggle.setAttribute("aria-expanded", "false");
+};
+
+if (siteHeader && mobileMenuToggle && headerActions) {
+  mobileMenuToggle.addEventListener("click", () => {
+    const isOpen = siteHeader.classList.toggle("is-menu-open");
+    mobileMenuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  headerActions.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMobileMenu);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!siteHeader.classList.contains("is-menu-open")) return;
+    if (!siteHeader.contains(event.target)) {
+      closeMobileMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMobileMenu();
+    }
+  });
+}
 
 const updateScrollProgress = () => {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
