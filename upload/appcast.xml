@@ -11,7 +11,7 @@
             <sparkle:version>100</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/frafra077/foldwise/releases/download/v.1.0.0/Foldwise.1.0.dmg" length="7925022" type="application/octet-stream" sparkle:edSignature="IsTWhm+Ui6Fey3B2ceIayQxXZ3fF/RK5PB3fG1Y4WhYM2bX9xQCMBsizpnxs5jqBzf0HM0eBmM9rKWgySz0fCQ=="></enclosure>
+            <enclosure url="https://github.com/frafra077/Foldwise/releases/download/v.1.0.0/Foldwise.1.0.dmg" length="7925022" type="application/octet-stream" sparkle:edSignature="IsTWhm+Ui6Fey3B2ceIayQxXZ3fF/RK5PB3fG1Y4WhYM2bX9xQCMBsizpnxs5jqBzf0HM0eBmM9rKWgySz0fCQ=="></enclosure>
         </item>
     </channel>
 </rss>
