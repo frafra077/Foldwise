@@ -106,10 +106,10 @@ const pageCopy = {
       ".privacy-grid article:nth-child(4) p": "Backup e ripristino permettono di salvare o spostare la configurazione su un altro Mac.",
       ".gallery-heading h2": "Foldwise, visto da vicino.",
       ".gallery-heading p":
-        "Una gallery essenziale e reale: dashboard completa, cartelle, regole e cronologia. Premi una schermata per aprirla a piena dimensione.",
+        "Una gallery essenziale e reale: dashboard completa, analisi AI, regole e cronologia. Premi una schermata per aprirla a piena dimensione.",
       ".gallery-main .gallery-caption strong": "Dashboard completa",
       ".gallery-main .gallery-caption span": "Cartelle, regole e cronologia in un unico spazio operativo.",
-      ".shot-folders strong": "Cartelle",
+      ".shot-folders strong": "Analisi AI",
       ".shot-rules strong": "Regole",
       ".shot-activity strong": "Activity log",
       "#download h2": "Scarica Foldwise. Sblocca Pro quando vuoi.",
@@ -180,7 +180,14 @@ const pageCopy = {
     },
     attrs: {
       ".site-header .nav": { "aria-label": "Navigazione principale" },
-      ".language-switcher": { "aria-label": "Seleziona lingua" }
+      ".language-switcher": { "aria-label": "Seleziona lingua" },
+      ".shot-folders": {
+        "data-gallery-title": "Analisi AI locale",
+        "data-gallery-caption": "Foldwise analizza la cartella sul Mac e suggerisce azioni trasformabili in regole automatiche."
+      },
+      ".shot-folders img": {
+        alt: "Analisi AI locale di Foldwise con suggerimenti per creare regole automatiche"
+      }
     }
   },
   en: {
@@ -281,10 +288,10 @@ const pageCopy = {
       ".privacy-grid article:nth-child(4) p": "Backup and restore let you save or move your configuration to another Mac.",
       ".gallery-heading h2": "Foldwise, up close.",
       ".gallery-heading p":
-        "A real, focused gallery: full dashboard, folders, rules, and history. Press a screenshot to open it full size.",
+        "A real, focused gallery: full dashboard, AI analysis, rules, and history. Press a screenshot to open it full size.",
       ".gallery-main .gallery-caption strong": "Full dashboard",
       ".gallery-main .gallery-caption span": "Folders, rules, and history in one operational space.",
-      ".shot-folders strong": "Folders",
+      ".shot-folders strong": "AI analysis",
       ".shot-rules strong": "Rules",
       ".shot-activity strong": "Activity log",
       "#download h2": "Download Foldwise. Unlock Pro whenever you are ready.",
@@ -355,7 +362,14 @@ const pageCopy = {
     },
     attrs: {
       ".site-header .nav": { "aria-label": "Main navigation" },
-      ".language-switcher": { "aria-label": "Select language" }
+      ".language-switcher": { "aria-label": "Select language" },
+      ".shot-folders": {
+        "data-gallery-title": "Local AI analysis",
+        "data-gallery-caption": "Foldwise analyzes the folder on your Mac and suggests actions that can become automatic rules."
+      },
+      ".shot-folders img": {
+        alt: "Foldwise local AI analysis with suggestions for creating automatic rules"
+      }
     }
   }
 };
