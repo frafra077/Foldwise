@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://foldwise.pro"><strong>Official Website</strong></a>
   ·
-  <a href="https://github.com/frafra077/Foldwise/releases/download/v.1.0.1/Foldwise.1.0.1.dmg">Download</a>
+  <a href="https://github.com/frafra077/Foldwise/releases/download/v.1.0.2/Foldwise.1.0.2.dmg">Download</a>
   ·
   <a href="https://dodo.pe/foldwise">Foldwise Pro</a>
 </p>
