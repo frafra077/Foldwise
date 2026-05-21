@@ -3,15 +3,15 @@
     <channel>
         <title>Foldwise</title>
         <item>
-            <title>Version 1.0.1</title>
-            <pubDate>Sun, 17 May 2026 21:17:00 +0200</pubDate>
+            <title>Version 1.0.2</title>
+            <pubDate>Thu, 21 May 2026 16:39:58 +0200</pubDate>
             <sparkle:releaseNotesLink xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xml:lang="it">https://foldwise.pro/release/notes.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xml:lang="en">https://foldwise.pro/release/notes-en.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xml:lang="fr">https://foldwise.pro/release/notes-fr.html</sparkle:releaseNotesLink>
-            <sparkle:version>101</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:version>192</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/frafra077/Foldwise/releases/download/v.1.0.1/Foldwise.1.0.1.dmg" length="7943395" type="application/octet-stream" sparkle:edSignature="oKWrbl89UFO1XdbtHZlvpc0pOCPoKdjh6FtOrhSSQoIymdzSvNg917dIhHBox8KDPNEj7fzk+y7JbB+kjT0XAw=="></enclosure>
+            <enclosure url="https://github.com/frafra077/Foldwise/releases/download/v.1.0.2/Foldwise.1.0.2.dmg" length="8017978" type="application/octet-stream" sparkle:edSignature="0xUrGScChlH5Olq6EXhHAi6ja7ThiiS19WV3ehORtdSNmPF7Trms88h1gdfbxze8iNQP2jKa9O3sBDkGzU0xAg=="></enclosure>
         </item>
     </channel>
 </rss>
