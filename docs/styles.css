@@ -371,6 +371,7 @@ a {
   perspective: 1400px;
   width: 103%;
   margin-left: 1%;
+  padding-top: 82px;
   animation: screenshot-in 900ms 120ms cubic-bezier(0.2, 0.72, 0.2, 1) both;
 }
 
@@ -518,14 +519,14 @@ a {
 }
 
 .chip-preview {
-  left: 6%;
-  top: -96px;
+  left: 8%;
+  top: 0;
   animation: float-soft 5.2s 400ms ease-in-out infinite;
 }
 
 .chip-ai {
-  right: 7%;
-  top: -72px;
+  right: 22%;
+  top: 8px;
   animation: float-soft 5.6s 900ms ease-in-out infinite;
 }
 
@@ -2186,6 +2187,7 @@ details p {
     max-width: 820px;
     width: 100%;
     margin-left: 0;
+    padding-top: 82px;
   }
 
   .hero-screenshot {
@@ -2194,6 +2196,12 @@ details p {
 
   .chip-preview {
     left: 12px;
+    top: 0;
+  }
+
+  .chip-ai {
+    right: 12px;
+    top: 8px;
   }
 
   .feature-grid,
