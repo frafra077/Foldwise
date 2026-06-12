@@ -7,14 +7,14 @@
 <h1 align="center">Foldwise</h1>
 
 <p align="center">
-  <strong>Automatic file organization for macOS.</strong><br>
-  A calm, native Mac app that watches your folders, applies smart rules, and keeps your workspace beautifully organized.
+  <strong>Your Mac, automatically organized.</strong><br>
+  A native file organizer for macOS that keeps your workspace clean with smart rules, local intelligence, and calm automation.
 </p>
 
 <p align="center">
   <a href="https://foldwise.pro"><strong>Official Website</strong></a>
   ·
-  <a href="https://github.com/frafra077/Foldwise/releases/download/v.1.0.2/Foldwise.1.0.2.dmg">Download</a>
+  <a href="https://github.com/frafra077/Foldwise/releases/latest">Download</a>
   ·
   <a href="https://dodo.pe/foldwise">Foldwise Pro</a>
 </p>
@@ -29,17 +29,40 @@
   <img src="docs/assets/foldwise-app-home.png" alt="Foldwise app home screen" width="920">
 </p>
 
-## Meet Foldwise
+## Organize less. Get more done.
 
-Foldwise is a premium macOS app for people who want their files to stay organized without doing the same cleanup work every day.
+Foldwise is the Mac app that quietly takes care of file clutter for you.
 
-It monitors the folders you choose, evaluates your rules, and automatically moves, copies, renames, tags, or cleans up matching files. Use it for Downloads, Desktop, invoices, screenshots, client folders, archives, creative assets, and every place where files pile up faster than you can sort them.
+It watches the folders you choose, applies your rules automatically, and helps you keep Downloads, Desktop, invoices, screenshots, client files, archives, and creative assets exactly where they belong. No manual sorting. No repeated cleanup. No clutter creeping back every day.
 
-## Why It Feels Different
+## What’s New in 1.1.0
 
-Foldwise is built around control, clarity, and trust. You define the workflow, preview what will happen, review every action in the activity log, and undo supported operations when needed.
+### Create with AI (Beta)
+Build rules by simply describing what you want in natural language.
 
-No black box. No forced cloud workflow. Just a focused Mac utility that makes your file system feel lighter.
+Instead of clicking through every field manually, just write something like:
+
+> “Move all PDFs with ‘invoice’ in the name to Documents/Invoices.”
+
+Foldwise will generate the rule for you automatically.
+
+This feature runs locally on your Mac using Apple’s **Foundation Models** framework, so your data stays private and nothing is sent to the cloud.
+
+> ⚠️ **Beta:** this feature is still evolving and may occasionally make mistakes, especially with complex or ambiguous requests. Always review the generated rule before enabling it.
+
+### Menu Bar Log Toggle
+A new **Log** button in the menu bar makes it easy to show or hide the log section instantly, without interrupting your workflow.
+
+### Other Improvements
+- Improved English translation.
+- Improved French translation.
+- Stability, polish, and usability improvements across the app.
+
+## Why Foldwise Feels Different
+
+Most file tools make you work around them. Foldwise is designed to stay out of the way.
+
+It gives you control where it matters, visibility where it helps, and automation where it saves time. You can preview actions, review what happened in the log, and undo supported operations when needed. It’s built to feel fast, calm, and trustworthy — like a good Mac app should.
 
 ## Highlights
 
@@ -52,67 +75,52 @@ No black box. No forced cloud workflow. Just a focused Mac utility that makes yo
 | **Action history** | Keeps a clear log for completed actions, previews, errors, and monitoring events. |
 | **Undo support** | Reverses supported operations such as moves, copies, and Finder tags. |
 | **Local suggestions** | Analyzes folders and proposes useful automations from real file patterns. |
+| **Create with AI** | Builds rules from natural language, locally on device. |
 | **Menu bar control** | Lets you pause, resume, inspect, and run automations without opening the main window. |
 
-## Powerful Rules, Simple Workflow
+## Built for Real Mac Work
 
-Create automations from clear building blocks:
+Foldwise is especially useful for:
 
-- **Conditions:** file type, extension, file name, readable text content, size, age, creation date.
-- **Logic:** match all conditions or at least one condition.
-- **Triggers:** run when files arrive or on a daily schedule.
-- **Actions:** move, copy, rename, trash, tag, or run scripts.
-- **Priority:** decide which rule wins when multiple rules could match.
-
-Foldwise is precise enough for advanced workflows, but approachable enough to configure visually.
-
-## Built For Everyday Mac Work
-
-Use Foldwise to:
-
-- Keep Downloads from becoming a permanent dumping ground.
-- Move screenshots into a dedicated folder automatically.
-- Route PDFs, invoices, and work documents by name or content.
-- Separate images, videos, archives, audio, and documents by category.
-- Apply Finder tags as part of a repeatable workflow.
-- Run cleanup routines on existing files without dragging everything by hand.
-
-## Local Intelligence
-
-Foldwise can inspect a folder and suggest useful rules based on the files already there. It can detect patterns such as screenshots, invoices, duplicates, older files, common file categories, and folders that need a cleaner structure.
-
-The goal is not just to describe the mess. Foldwise helps turn those patterns into automations you can actually use.
+- Keeping Downloads under control.
+- Organizing screenshots automatically.
+- Sorting invoices, documents, and work files by name or content.
+- Grouping images, videos, archives, audio, and documents without manual sorting.
+- Applying Finder tags as part of a repeatable workflow.
+- Running cleanup routines on existing files with a single click.
+- Creating rules faster when you don’t want to build them manually.
 
 ## Privacy First
 
-Foldwise is designed for local control:
+Foldwise is built around local control and trust:
 
 - Your files stay on your Mac.
 - Rules are stored locally.
 - Folder access follows macOS security permissions.
 - Local analysis does not require uploading your documents.
+- The AI creation feature runs on-device through Apple Foundation Models.
 - Cleanup actions use the Trash instead of permanent deletion when removing files.
 
 Internet access may be used for product features such as licensing, downloads, and app updates.
 
-## Free And Pro
+## Free and Pro
 
-Foldwise is distributed as a freemium app.
+Foldwise is available as a freemium app.
 
-**Foldwise Free** is made for getting started:
+**Foldwise Free** is ideal for getting started:
 
 - 1 monitored folder.
 - Up to 3 rules per folder.
 - Essential actions such as move and trash.
 
-**Foldwise Pro** unlocks the complete experience for larger and more serious workflows, including more folders, more rules, advanced actions, app protection, startup behavior, and a more flexible daily automation setup.
+**Foldwise Pro** unlocks the full experience for bigger, more advanced workflows, including more folders, more rules, advanced actions, app protection, startup behavior, and a more flexible daily automation setup.
 
 ## Requirements
 
 - macOS 14 or later.
 - A Mac compatible with recent macOS releases.
 
-Some advanced capabilities may depend on the macOS version available on your device.
+Some advanced capabilities may depend on the macOS version available on your device. The AI creation feature requires Apple Intelligence support.
 
 ## Website
 
@@ -120,4 +128,4 @@ Learn more, download the app, and explore Foldwise Pro at [foldwise.pro](https:/
 
 ## Status
 
-Foldwise is in active development with a focus on polish, reliability, privacy, and a native macOS experience that feels fast, calm, and trustworthy.
+Foldwise is in active development, with a focus on polish, reliability, privacy, and a native macOS experience that feels fast, calm, and trustworthy.
