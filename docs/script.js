@@ -13,12 +13,12 @@ const pageCopy = {
     description:
       "Foldwise e' l'app premium per macOS che monitora le cartelle, applica regole intelligenti e mantiene file, download e desktop sempre ordinati.",
     text: {
-      ".nav a:nth-child(1)": "Funzioni",
-      ".nav a:nth-child(2)": "Privacy",
-      ".nav a:nth-child(3)": "Gallery",
+      ".nav a[href='#funzioni']": "Funzioni",
+      ".nav a[href='#privacy']": "Privacy",
+      ".nav a[href='#gallery']": "Gallery",
       ".nav-download": "Download",
-      ".nav a:nth-child(5)": "Contatti",
-      ".nav a:nth-child(6)": "FAQ",
+      ".nav a[href='#contatti']": "Contatti",
+      ".nav a[href='#faq']": "FAQ",
       ".nav-cta": "Acquista Licenza",
       ".mobile-menu-toggle span": "Menu",
       ".hero-lead": "Il sistema elegante per macOS che riordina Desktop, Download e cartelle di lavoro mentre tu pensi ad altro.",
@@ -60,6 +60,26 @@ const pageCopy = {
       ".control-rail div:nth-child(2) span": "Ogni spostamento resta tracciabile.",
       ".control-rail div:nth-child(3) strong": "Annulla",
       ".control-rail div:nth-child(3) span": "Torna indietro dove l'azione lo consente.",
+      ".folder-titlebar strong": "Downloads",
+      ".chaos-toolbar span": "8 elementi non ordinati",
+      ".chaos-toolbar strong": "Downloads",
+      ".folder-chaos .scene-label": "Prima",
+      ".folder-clean .scene-label": "Dopo",
+      ".foldwise-sorter strong": "Foldwise",
+      ".foldwise-sorter span": "Regole attive",
+      ".sorter-rules em:nth-child(1)": "PDF → Fatture",
+      ".sorter-rules em:nth-child(2)": "IMG → Immagini",
+      ".sorter-rules em:nth-child(3)": "DOC → Documenti",
+      ".organized-status strong": "Cartella ordinata",
+      ".organized-status small": "4 regole applicate · log pronto",
+      ".organized-folder.invoices strong": "Fatture",
+      ".organized-folder.invoices small": "invoice.pdf · receipt.pdf",
+      ".organized-folder.images strong": "Immagini",
+      ".organized-folder.images small": "photo.png · screenshot.png",
+      ".organized-folder.docs strong": "Documenti",
+      ".organized-folder.docs small": "contract.docx · notes.txt",
+      ".organized-folder.archive strong": "Archivio",
+      ".organized-folder.archive small": "archive.zip · report.xlsx",
       "#funzioni .section-heading h2": "Automazioni potenti, controllo da professionista.",
       "#funzioni .section-heading p":
         "Foldwise copre il ciclo completo: monitoraggio, regole, anteprima, azioni, storico e recupero. Disponibile in italiano, inglese e francese.",
@@ -106,9 +126,11 @@ const pageCopy = {
       ".privacy-grid article:nth-child(4) p": "Backup e ripristino permettono di salvare o spostare la configurazione su un altro Mac.",
       ".gallery-heading h2": "Foldwise, visto da vicino.",
       ".gallery-heading p":
-        "Una gallery essenziale e reale: dashboard completa, analisi AI, regole e cronologia. Premi una schermata per aprirla a piena dimensione.",
+        "Schermate reali dell'app: dashboard, Crea con AI, analisi locale, regole e cronologia. Premi una schermata per aprirla a piena dimensione.",
       ".gallery-main .gallery-caption strong": "Dashboard completa",
       ".gallery-main .gallery-caption span": "Cartelle, regole e cronologia in un unico spazio operativo.",
+      ".shot-create-ai .gallery-caption strong": "Crea con AI",
+      ".shot-create-ai .gallery-caption span": "Da richiesta naturale a bozza verificabile.",
       ".shot-folders strong": "Analisi AI",
       ".shot-rules strong": "Regole",
       ".shot-activity strong": "Activity log",
@@ -127,7 +149,7 @@ const pageCopy = {
       ".price-note": "Licenza una tantum",
       ".plan.pro li:nth-child(1)": "Cartelle e regole senza limiti",
       ".plan.pro li:nth-child(2)": "Copia, rinomina, tag, script e azioni avanzate",
-      ".plan.pro li:nth-child(3)": "AI locale privata e log completo",
+      ".plan.pro li:nth-child(3)": "Crea con AI, AI locale privata e log completo",
       ".plan.pro li:nth-child(4)": "Interfaccia multilingue: italiano, inglese e francese",
       ".plan.pro li:nth-child(5)": "Aggiornamenti futuri inclusi, fino a 2 Mac",
       ".plan.pro .button": "Acquista Licenza",
@@ -146,7 +168,7 @@ const pageCopy = {
       ".faq-list details:nth-child(1) summary": "Posso usare Foldwise gratis?",
       ".faq-list details:nth-child(1) p": "Si. Foldwise Free ti permette di provare il workflow reale con 1 cartella monitorata, fino a 3 regole e le azioni essenziali.",
       ".faq-list details:nth-child(2) summary": "Che cosa sblocca Foldwise Pro?",
-      ".faq-list details:nth-child(2) p": "Pro rimuove i limiti su cartelle e regole, abilita azioni avanzate come copia, rinomina, tag e script, include AI locale privata e log completo.",
+      ".faq-list details:nth-child(2) p": "Pro rimuove i limiti su cartelle e regole, abilita azioni avanzate come copia, rinomina, tag e script, include Crea con AI, AI locale privata e log completo.",
       ".faq-list details:nth-child(3) summary": "La licenza e' un abbonamento?",
       ".faq-list details:nth-child(3) p": "No. Foldwise Pro e' una licenza una tantum. Paghi una volta e sblocchi le funzioni Pro sui Mac supportati dalla licenza.",
       ".faq-list details:nth-child(4) summary": "Su quanti Mac posso usare la licenza?",
@@ -176,7 +198,20 @@ const pageCopy = {
       ".footer-col:nth-child(1) a:nth-child(2)": "Funzioni",
       ".footer-col:nth-child(1) a:nth-child(5)": "Privacy",
       ".footer-col:nth-child(2) .footer-col-title": "Supporto",
-      ".footer-col:nth-child(2) a:nth-child(3)": "Contatti"
+      ".footer-col:nth-child(2) a:nth-child(3)": "Contatti",
+      ".nav-ai-beta-text": "Crea con AI",
+      ".footer-ai-text": "Crea con AI",
+      ".ai-beta-tag": "AI Beta",
+      ".ai-title-text": "Crea con AI",
+      ".ai-beta-lead": "Descrivi in parole semplici quello che vuoi fare e Foldwise prepara per te una bozza di regola già pronta da controllare, modificare e salvare.",
+      ".ai-pro-note": "Disponibile con Foldwise Pro.",
+      ".feat-title-1": "Richieste in linguaggio naturale",
+      ".feat-desc-1": "Basta scrivere richieste naturali come \"sposta i PDF con fattura nel nome in Fatture\" oppure \"rinomina tutti i file aggiungendo la data di oggi\".",
+      ".feat-title-2": "Controllo e sicurezza prima di tutto",
+      ".feat-desc-2": "È una funzione nuova, in beta, e può ancora commettere errori. Proprio per questo Foldwise non applica nulla alla cieca: prima ti mostra sempre una bozza leggibile, così resti tu ad avere il controllo finale.",
+      ".feat-title-3": "Un sistema che cresce con te",
+      ".feat-desc-3": "La parte più bella è che cresce con noi. Più la evolviamo, più diventa capace di capire richieste reali, sfumature di linguaggio e casi complessi, mantenendo un approccio locale, pratico e verificabile.",
+      ".ai-beta-footnote": "* \"Crea con AI\" è una funzione riservata a Foldwise Pro. Per sfruttarla al massimo sono richiesti macOS 26+ e processori Apple Silicon (da M1 in su). Sugli altri dispositivi la funzione è utilizzabile con limitazioni."
     },
     attrs: {
       ".site-header .nav": { "aria-label": "Navigazione principale" },
@@ -187,6 +222,13 @@ const pageCopy = {
       },
       ".shot-folders img": {
         alt: "Analisi AI locale di Foldwise con suggerimenti per creare regole automatiche"
+      },
+      ".shot-create-ai": {
+        "data-gallery-title": "Crea con AI",
+        "data-gallery-caption": "La funzione Pro trasforma una richiesta in linguaggio naturale in una bozza di regola verificabile prima del salvataggio."
+      },
+      ".shot-create-ai img": {
+        alt: "Schermata Crea con AI di Foldwise con bozza regola pronta da verificare"
       }
     }
   },
@@ -195,12 +237,12 @@ const pageCopy = {
     description:
       "Foldwise is the premium macOS app that watches folders, applies intelligent rules, and keeps files, downloads, and desktops organized.",
     text: {
-      ".nav a:nth-child(1)": "Features",
-      ".nav a:nth-child(2)": "Privacy",
-      ".nav a:nth-child(3)": "Gallery",
+      ".nav a[href='#funzioni']": "Features",
+      ".nav a[href='#privacy']": "Privacy",
+      ".nav a[href='#gallery']": "Gallery",
       ".nav-download": "Download",
-      ".nav a:nth-child(5)": "Contact",
-      ".nav a:nth-child(6)": "FAQ",
+      ".nav a[href='#contatti']": "Contact",
+      ".nav a[href='#faq']": "FAQ",
       ".nav-cta": "Buy License",
       ".mobile-menu-toggle span": "Menu",
       ".hero-lead": "The elegant macOS system that organizes Desktop, Downloads, and work folders while you focus on everything else.",
@@ -242,6 +284,26 @@ const pageCopy = {
       ".control-rail div:nth-child(2) span": "Every move stays traceable.",
       ".control-rail div:nth-child(3) strong": "Undo",
       ".control-rail div:nth-child(3) span": "Go back when the action allows it.",
+      ".folder-titlebar strong": "Downloads",
+      ".chaos-toolbar span": "8 unsorted items",
+      ".chaos-toolbar strong": "Downloads",
+      ".folder-chaos .scene-label": "Before",
+      ".folder-clean .scene-label": "After",
+      ".foldwise-sorter strong": "Foldwise",
+      ".foldwise-sorter span": "Active rules",
+      ".sorter-rules em:nth-child(1)": "PDF → Invoices",
+      ".sorter-rules em:nth-child(2)": "IMG → Images",
+      ".sorter-rules em:nth-child(3)": "DOC → Documents",
+      ".organized-status strong": "Folder organized",
+      ".organized-status small": "4 rules applied · log ready",
+      ".organized-folder.invoices strong": "Invoices",
+      ".organized-folder.invoices small": "invoice.pdf · receipt.pdf",
+      ".organized-folder.images strong": "Images",
+      ".organized-folder.images small": "photo.png · screenshot.png",
+      ".organized-folder.docs strong": "Documents",
+      ".organized-folder.docs small": "contract.docx · notes.txt",
+      ".organized-folder.archive strong": "Archive",
+      ".organized-folder.archive small": "archive.zip · report.xlsx",
       "#funzioni .section-heading h2": "Powerful automations, professional control.",
       "#funzioni .section-heading p":
         "Foldwise covers the full cycle: monitoring, rules, preview, actions, history, and recovery. Available in Italian, English, and French.",
@@ -288,9 +350,11 @@ const pageCopy = {
       ".privacy-grid article:nth-child(4) p": "Backup and restore let you save or move your configuration to another Mac.",
       ".gallery-heading h2": "Foldwise, up close.",
       ".gallery-heading p":
-        "A real, focused gallery: full dashboard, AI analysis, rules, and history. Press a screenshot to open it full size.",
+        "Real app screenshots: dashboard, Create with AI, local analysis, rules, and history. Press a screenshot to open it full size.",
       ".gallery-main .gallery-caption strong": "Full dashboard",
       ".gallery-main .gallery-caption span": "Folders, rules, and history in one operational space.",
+      ".shot-create-ai .gallery-caption strong": "Create with AI",
+      ".shot-create-ai .gallery-caption span": "From natural request to verifiable draft.",
       ".shot-folders strong": "AI analysis",
       ".shot-rules strong": "Rules",
       ".shot-activity strong": "Activity log",
@@ -309,7 +373,7 @@ const pageCopy = {
       ".price-note": "One-time license",
       ".plan.pro li:nth-child(1)": "Unlimited folders and rules",
       ".plan.pro li:nth-child(2)": "Copy, rename, tag, scripts, and advanced actions",
-      ".plan.pro li:nth-child(3)": "Private local AI and complete logs",
+      ".plan.pro li:nth-child(3)": "Create with AI, private local AI, and complete logs",
       ".plan.pro li:nth-child(4)": "Multilingual interface: Italian, English, and French",
       ".plan.pro li:nth-child(5)": "Future updates included, up to 2 Macs",
       ".plan.pro .button": "Buy License",
@@ -328,7 +392,7 @@ const pageCopy = {
       ".faq-list details:nth-child(1) summary": "Can I use Foldwise for free?",
       ".faq-list details:nth-child(1) p": "Yes. Foldwise Free lets you try the real workflow with 1 monitored folder, up to 3 rules, and essential actions.",
       ".faq-list details:nth-child(2) summary": "What does Foldwise Pro unlock?",
-      ".faq-list details:nth-child(2) p": "Pro removes folder and rule limits, enables advanced actions like copy, rename, tags, and scripts, and includes private local AI plus complete logs.",
+      ".faq-list details:nth-child(2) p": "Pro removes folder and rule limits, enables advanced actions like copy, rename, tags, and scripts, and includes Create with AI, private local AI, and complete logs.",
       ".faq-list details:nth-child(3) summary": "Is the license a subscription?",
       ".faq-list details:nth-child(3) p": "No. Foldwise Pro is a one-time license. Pay once and unlock Pro features on the Macs supported by your license.",
       ".faq-list details:nth-child(4) summary": "How many Macs can I use it on?",
@@ -358,7 +422,20 @@ const pageCopy = {
       ".footer-col:nth-child(1) a:nth-child(2)": "Features",
       ".footer-col:nth-child(1) a:nth-child(5)": "Privacy",
       ".footer-col:nth-child(2) .footer-col-title": "Support",
-      ".footer-col:nth-child(2) a:nth-child(3)": "Contact"
+      ".footer-col:nth-child(2) a:nth-child(3)": "Contact",
+      ".nav-ai-beta-text": "Create with AI",
+      ".footer-ai-text": "Create with AI",
+      ".ai-beta-tag": "AI Beta",
+      ".ai-title-text": "Create with AI",
+      ".ai-beta-lead": "Describe in simple words what you want to do, and Foldwise prepares a ready-to-check rule draft for you to review, edit, and save.",
+      ".ai-pro-note": "Available with Foldwise Pro.",
+      ".feat-title-1": "Natural language requests",
+      ".feat-desc-1": "Just write natural requests like \"move PDFs with invoice in their name to Invoices\" or \"rename all files by adding today's date\".",
+      ".feat-title-2": "Control and safety first",
+      ".feat-desc-2": "It's a new feature in beta and can still make mistakes. That's why Foldwise doesn't apply anything blindly: it always shows you a readable draft first, so you stay in final control.",
+      ".feat-title-3": "A system that grows with us",
+      ".feat-desc-3": "The best part is that it grows with us. The more we evolve it, the better it understands real requests, nuances, and complex cases, maintaining a local, practical, and verifiable approach.",
+      ".ai-beta-footnote": "* \"Create with AI\" is reserved for Foldwise Pro. To get the most from it, macOS 26+ and Apple Silicon processors (M1 or newer) are required. On other devices, the feature is available with limitations."
     },
     attrs: {
       ".site-header .nav": { "aria-label": "Main navigation" },
@@ -369,6 +446,13 @@ const pageCopy = {
       },
       ".shot-folders img": {
         alt: "Foldwise local AI analysis with suggestions for creating automatic rules"
+      },
+      ".shot-create-ai": {
+        "data-gallery-title": "Create with AI",
+        "data-gallery-caption": "The Pro feature turns a natural-language request into a verifiable rule draft before saving."
+      },
+      ".shot-create-ai img": {
+        alt: "Foldwise Create with AI screen with a rule draft ready to review"
       }
     }
   }
@@ -405,6 +489,9 @@ const applyLanguage = (lang) => {
   });
 
   localStorage.setItem("foldwise-language", lang);
+  if (typeof updateAISimulatorLanguage === "function") {
+    updateAISimulatorLanguage(lang);
+  }
 };
 
 const savedLanguage = localStorage.getItem("foldwise-language");
@@ -471,6 +558,8 @@ updateScrollProgress();
 
 const revealSelectors = [
   ".section",
+  ".ai-simulator",
+  ".ai-beta-feat-item",
   ".workflow-panel",
   ".compare-card",
   ".file-pipeline",
@@ -564,3 +653,329 @@ if (galleryItems.length && lightbox) {
     }
   });
 }
+
+// --- AI TYPING SIMULATOR FOR 'CREA CON AI' SECTION ---
+(function() {
+  const promptTypingEl = document.getElementById("ai-prompt-typing");
+  if (!promptTypingEl) return;
+
+  const stateEmptyEl = document.getElementById("ai-sim-state-empty");
+  const stateLoadingEl = document.getElementById("ai-sim-state-loading");
+  const stateGeneratedEl = document.getElementById("ai-sim-state-generated");
+  const rightColEl = document.getElementById("ai-sim-col-right");
+
+  const btnImproveEl = document.getElementById("ai-sim-btn-improve");
+  const btnGenerateEl = document.getElementById("ai-sim-btn-generate");
+  const btnCreateEl = document.getElementById("ai-sim-btn-create");
+  const readyBadgeEl = document.getElementById("ai-sim-ready-badge");
+
+  // Card elements
+  const cardUnderstoodDesc = document.getElementById("ai-sim-card-understood-desc");
+  const cardUnderstoodList = document.getElementById("ai-sim-card-understood-list");
+  const cardNameVal = document.getElementById("ai-sim-card-name-val");
+  const cardActVal = document.getElementById("ai-sim-card-act-val");
+  const cardActionType = document.getElementById("ai-sim-action-type");
+  const cardActionInputVal = document.getElementById("ai-sim-action-input-val");
+  const tagSectionEl = document.querySelector(".sim-card.actions-card .tag-section");
+
+
+  // Helper to set text content safely
+  function setText(sel, txt) {
+    const el = document.querySelector(sel);
+    if (el) el.textContent = txt;
+  }
+
+  // Static UI translations for the simulator chrome
+  const uiTranslations = {
+    it: {
+      titleText: "Crea regola con AI (Beta)",
+      headerDesc: "Descrivi l'automazione che desideri. Foldwise prepara una bozza locale e la salva solo quando confermi.",
+      leftTitle: "Cosa vuoi automatizzare?",
+      leftDesc: "Scrivi come se parlassi a una persona. Puoi specificare tipo di file, parole nel nome o nel contenuto, età, cartella, rinomina, tag o pianificazione.",
+      warningText: "Funzione beta: Foldwise può commettere errori. Rivedi sempre la bozza prima di salvare.",
+      examplesTitle: "Esempi rapidi",
+      exText1: "Rinomina tutti i file aggiungendo la data di oggi come prefisso",
+      exText2: "Sposta tutti i PDF con fattura nel nome nella cartella Fatture",
+      textImprove: "Migliora richiesta",
+      textGenerate: "Genera bozza",
+      rightTitle: "Bozza regola",
+      rightDesc: "Rivedi ciò che verrà creato. Potrai sempre modificarlo in seguito.",
+      emptyTitle: "Nessuna bozza",
+      emptyDesc: "Foldwise non esegue nulla in automatico: prima crea una bozza leggibile, poi decidi tu se salvarla.",
+      loadingText: "Elaborazione bozza con AI locale...",
+      cardEngineTitle: "MOTORE AI LOCALE",
+      cardEngineDesc: "Modelli Foundation attivi: Foldwise utilizza l'AI locale disponibile su questo Mac.",
+      cardUnderstoodTitle: "HO CAPITO CHE",
+      cardUnderstoodSub: "Verifica automatica: puoi regolare ogni dettaglio prima di salvare.",
+      cardNameTitle: "NOME",
+      cardActTitle: "ATTIVAZIONE",
+      cardCondTitle: "CONDIZIONI",
+      cardActionsTitle: "AZIONI",
+      cardActionsDesc: "Rivedi l'ordine delle azioni e modifica il tipo di operazione se necessario.",
+      tagBase: "Base",
+      tagDates: "Date file",
+      tagTransform: "Trasforma nome",
+      cancelText: "Annulla",
+      readyText: "Pronto",
+      textCreate: "Crea regola"
+    },
+    en: {
+      titleText: "Create rule with AI (Beta)",
+      headerDesc: "Describe the automation you want. Foldwise prepares a local draft and saves it only when you confirm.",
+      leftTitle: "What do you want to automate?",
+      leftDesc: "Write as you would speak to a person. You can specify file type, words in the name or content, age, folder, rename, tag, or schedule.",
+      warningText: "Beta feature: Foldwise can make mistakes. Always review the draft before saving.",
+      examplesTitle: "Quick examples",
+      exText1: "Rename all files by adding today's date as a prefix",
+      exText2: "Move all PDFs with invoice in the name to the Invoices folder",
+      textImprove: "Improve request",
+      textGenerate: "Generate draft",
+      rightTitle: "Rule draft",
+      rightDesc: "Review what will be created. You can always edit it later.",
+      emptyTitle: "No draft yet",
+      emptyDesc: "Foldwise does not run anything automatically: it first creates a readable draft, then you decide whether to save it.",
+      loadingText: "Processing draft with local AI...",
+      cardEngineTitle: "LOCAL AI ENGINE",
+      cardEngineDesc: "Foundation Models active: Foldwise is using the full on-device AI available on this Mac.",
+      cardUnderstoodTitle: "I UNDERSTOOD THAT",
+      cardUnderstoodSub: "Automatic check: you can adjust every detail before saving.",
+      cardNameTitle: "NAME",
+      cardActTitle: "ACTIVATION",
+      cardCondTitle: "CONDITIONS",
+      cardActionsTitle: "ACTIONS",
+      cardActionsDesc: "Review the action order and adjust the operation type if needed.",
+      tagBase: "Base",
+      tagDates: "File dates",
+      tagTransform: "Transform name",
+      cancelText: "Cancel",
+      readyText: "Ready",
+      textCreate: "Create rule"
+    }
+  };
+
+  // Localized Simulation Scenarios
+  const scenarios = {
+    it: [
+      {
+        prompt: "Rinomina tutti i file aggiungendo la data di oggi come prefisso",
+        understoodDesc: "Ogni giorno alle 02:00, Foldwise controllerà tutti i file e poi eseguirà l'azione 1: rinomina con \"{data}_{nome}\".",
+        checklist: [
+          "Hai selezionato tutti i file: Foldwise non aggiungerà filtri per tipo, nome o estensione.",
+          "Ho riconosciuto un orario, quindi la regola verrà eseguita in modo pianificato.",
+          "Ho preparato un'azione di ridenominazione con il pattern specificato, modificabile prima del salvataggio."
+        ],
+        nameVal: "Aggiungi data di oggi ai nomi dei file",
+        actVal: "Ogni giorno alle 02:00",
+        condVal: "Tutti i file",
+        actionType: "Rinomina in",
+        actionInputVal: "{data}_{nome}",
+        showTags: true
+      },
+      {
+        prompt: "Sposta tutti i PDF con fattura nel nome nella cartella Fatture",
+        understoodDesc: "Non appena arriva un file, se è un PDF e il nome contiene \"fattura\", Foldwise lo sposterà nella cartella \"Fatture\".",
+        checklist: [
+          "Ho aggiunto un filtro: l'estensione del file deve essere PDF.",
+          "Ho aggiunto un filtro: il nome del file deve contenere \"fattura\".",
+          "Ho preparato un'azione di spostamento verso la cartella specificata."
+        ],
+        nameVal: "Sposta PDF fattura in Fatture",
+        actVal: "In tempo reale (al caricamento file)",
+        condVal: "Estensione: PDF, Nome: fattura",
+        actionType: "Sposta in",
+        actionInputVal: "Fatture",
+        showTags: false
+      }
+    ],
+    en: [
+      {
+        prompt: "Rename all files by adding today's date as a prefix",
+        understoodDesc: "Every day at 02:00, Foldwise will check all files and then action 1: rename with \"{date}_{name}\".",
+        checklist: [
+          "You selected all files: Foldwise will not add filters for file type, name, or extension.",
+          "I recognized a time, so the rule will run on a schedule.",
+          "I prepared a rename action with the specified pattern, editable before saving."
+        ],
+        nameVal: "Add today's date to filenames",
+        actVal: "Every day at 02:00",
+        condVal: "All files",
+        actionType: "Rename to",
+        actionInputVal: "{date}_{name}",
+        showTags: true
+      },
+      {
+        prompt: "Move all PDFs with invoice in the name to the Invoices folder",
+        understoodDesc: "As soon as a file arrives, if it is a PDF and its name contains \"invoice\", Foldwise will move it to the \"Invoices\" folder.",
+        checklist: [
+          "I added a filter: the file extension must be exactly PDF.",
+          "I added a filter: the filename must contain the word \"invoice\".",
+          "I prepared a move action targeting the specified folder."
+        ],
+        nameVal: "Move invoice PDFs to Invoices",
+        actVal: "Real-time (on file arrival)",
+        condVal: "Extension: PDF, Name: invoice",
+        actionType: "Move to",
+        actionInputVal: "Invoices",
+        showTags: false
+      }
+    ]
+  };
+
+  let currentLang = document.documentElement.lang || "it";
+  let scenarioIndex = 0;
+  let typingTimeout = null;
+  let animTimeout = null;
+
+  function translateStaticUI() {
+    const t = uiTranslations[currentLang] || uiTranslations.it;
+    setText("#ai-sim-title-text", t.titleText);
+    setText("#ai-sim-header-desc", t.headerDesc);
+    setText("#ai-sim-left-title", t.leftTitle);
+    setText("#ai-sim-left-desc", t.leftDesc);
+    setText("#ai-sim-warning-text", t.warningText);
+    setText("#ai-sim-examples-title", t.examplesTitle);
+    setText("#ai-sim-ex-text-1", t.exText1);
+    setText("#ai-sim-ex-text-2", t.exText2);
+    setText("#ai-sim-text-improve", t.textImprove);
+    setText("#ai-sim-text-generate", t.textGenerate);
+    setText("#ai-sim-right-title", t.rightTitle);
+    setText("#ai-sim-right-desc", t.rightDesc);
+    setText("#ai-sim-empty-title", t.emptyTitle);
+    setText("#ai-sim-empty-desc", t.emptyDesc);
+    setText("#ai-sim-loading-text", t.loadingText);
+    setText("#ai-sim-card-engine-title", t.cardEngineTitle);
+    setText("#ai-sim-card-engine-desc", t.cardEngineDesc);
+    setText("#ai-sim-card-understood-title", t.cardUnderstoodTitle);
+    setText("#ai-sim-card-understood-sub", t.cardUnderstoodSub);
+    setText("#ai-sim-card-name-title", t.cardNameTitle);
+    setText("#ai-sim-card-act-title", t.cardActTitle);
+    setText("#ai-sim-card-cond-title", t.cardCondTitle);
+    setText("#ai-sim-card-actions-title", t.cardActionsTitle);
+    setText("#ai-sim-card-actions-desc", t.cardActionsDesc);
+    setText("#ai-sim-tag-base", t.tagBase);
+    setText("#ai-sim-tag-dates", t.tagDates);
+    setText("#ai-sim-tag-transform", t.tagTransform);
+    setText("#ai-sim-cancel-text", t.cancelText);
+    setText("#ai-sim-ready-text", t.readyText);
+    setText("#ai-sim-text-create", t.textCreate);
+  }
+
+  function runSimulation() {
+    translateStaticUI();
+
+    const list = scenarios[currentLang] || scenarios.it;
+    const sc = list[scenarioIndex];
+
+    // 1. Reset all states
+    promptTypingEl.textContent = "";
+    stateEmptyEl.classList.remove("is-hidden");
+    stateLoadingEl.classList.remove("is-active");
+    stateGeneratedEl.classList.remove("is-active");
+    readyBadgeEl.classList.remove("is-active");
+    btnGenerateEl.classList.remove("is-active");
+    btnGenerateEl.disabled = true;
+    btnImproveEl.disabled = true;
+    btnCreateEl.disabled = true;
+    if (rightColEl) rightColEl.scrollTop = 0;
+
+    // 2. Type prompt text
+    let charIndex = 0;
+    const textToType = sc.prompt;
+
+    function typeChar() {
+      if (charIndex < textToType.length) {
+        promptTypingEl.textContent += textToType.charAt(charIndex);
+        charIndex++;
+        if (charIndex === 1) {
+          btnGenerateEl.disabled = false;
+          btnImproveEl.disabled = false;
+          btnGenerateEl.classList.add("is-active");
+        }
+        typingTimeout = setTimeout(typeChar, 40 + Math.random() * 30);
+      } else {
+        typingTimeout = setTimeout(simulateClick, 800);
+      }
+    }
+    typeChar();
+
+    // 3. Simulate button click
+    function simulateClick() {
+      btnGenerateEl.style.transform = "scale(0.96)";
+      animTimeout = setTimeout(function() {
+        btnGenerateEl.style.transform = "";
+        showLoading();
+      }, 150);
+    }
+
+    // 4. Show loading spinner
+    function showLoading() {
+      stateEmptyEl.classList.add("is-hidden");
+      stateLoadingEl.classList.add("is-active");
+      animTimeout = setTimeout(showResult, 1400);
+    }
+
+    // 5. Show generated rule cards
+    function showResult() {
+      stateLoadingEl.classList.remove("is-active");
+
+      if (cardUnderstoodDesc) cardUnderstoodDesc.textContent = sc.understoodDesc;
+
+      if (cardUnderstoodList) {
+        cardUnderstoodList.innerHTML = "";
+        sc.checklist.forEach(function(item) {
+          var li = document.createElement("li");
+          li.innerHTML = '<span class="chk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> <span class="chk-text">' + item + '</span>';
+          cardUnderstoodList.appendChild(li);
+        });
+      }
+
+      if (cardNameVal) cardNameVal.textContent = sc.nameVal;
+      if (cardActVal) cardActVal.textContent = sc.actVal;
+      
+      const condWrapper = document.getElementById("ai-sim-card-cond-wrapper");
+      const condValEl = document.getElementById("ai-sim-card-cond-val");
+      if (condWrapper && condValEl) {
+        condValEl.textContent = sc.condVal;
+        condWrapper.style.display = "flex";
+      }
+
+      if (cardActionType) cardActionType.textContent = sc.actionType;
+      if (cardActionInputVal) cardActionInputVal.textContent = sc.actionInputVal;
+
+      if (tagSectionEl) {
+        tagSectionEl.style.display = sc.showTags ? "flex" : "none";
+      }
+
+      stateGeneratedEl.classList.add("is-active");
+
+      // Reveal footer badge and button
+      setTimeout(function() {
+        readyBadgeEl.classList.add("is-active");
+        btnCreateEl.disabled = false;
+      }, 400);
+
+      // Smooth-scroll the right column to show actions & tags
+      setTimeout(function() {
+        if (rightColEl) rightColEl.scrollTop = rightColEl.scrollHeight;
+      }, 1600);
+
+      // 6. Loop to next scenario
+      scenarioIndex = (scenarioIndex + 1) % list.length;
+      animTimeout = setTimeout(runSimulation, 7500);
+    }
+  }
+
+  // Hook language switcher
+  window.updateAISimulatorLanguage = function(lang) {
+    if (currentLang !== lang) {
+      currentLang = lang;
+      scenarioIndex = 0;
+      clearTimeout(typingTimeout);
+      clearTimeout(animTimeout);
+      runSimulation();
+    }
+  };
+
+  // Start
+  runSimulation();
+})();
