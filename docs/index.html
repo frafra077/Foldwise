@@ -24,6 +24,7 @@
       <div class="header-actions" id="site-menu">
         <nav class="nav" aria-label="Navigazione principale">
           <a href="#funzioni">Funzioni</a>
+          <a href="#crea-con-ai"><span class="nav-ai-beta-text">Crea con AI</span> <span class="nav-badge">Beta</span></a>
           <a href="#privacy">Privacy</a>
           <a href="#gallery">Gallery</a>
           <a class="nav-download" href="#download">Download</a>
@@ -86,55 +87,65 @@
         </div>
       </section>
 
-      <section class="section problem">
+      <section id="problema" class="section problem">
         <div class="problem-intro">
           <h2>La tua scrivania non deve diventare un secondo lavoro.</h2>
           <p>
             Ogni download, screenshot, PDF o allegato crea una piccola decisione. Foldwise trasforma quelle decisioni in un sistema ordinato, verificabile e sempre sotto controllo.
           </p>
         </div>
-        <div class="problem-system" aria-label="Confronto tra disordine manuale e automazione Foldwise">
-          <div class="comparison">
-            <article class="compare-card before">
-              <span class="compare-icon">!</span>
-              <h3>Senza Foldwise</h3>
-              <ul>
-                <li>Download accumulati per giorni.</li>
-                <li>File rinominati a mano, quando ti ricordi.</li>
-                <li>Nessuna traccia chiara di cosa e' cambiato.</li>
-              </ul>
-            </article>
-            <div class="compare-arrow">→</div>
-            <article class="compare-card after">
-              <span class="compare-icon">✓</span>
-              <h3>Con Foldwise</h3>
-              <ul>
-                <li>Regole attive appena arriva un file.</li>
-                <li>Preview prima di applicare modifiche.</li>
-                <li>Log e undo per lavorare senza ansia.</li>
-              </ul>
-            </article>
-          </div>
-
-          <div class="file-pipeline">
-            <div class="incoming-stack">
-              <small>File in arrivo</small>
-              <span>invoice.pdf</span>
-              <span>screenshot.png</span>
-              <span>report-final.zip</span>
-            </div>
-            <div class="automation-core">
-              <img src="assets/foldwise-icon.png" alt="" />
-              <div>
-                <strong>Regole Foldwise</strong>
-                <small>tipo, nome, data, contenuto</small>
+        <div class="problem-system" aria-label="Animazione da cartella disordinata a cartelle ordinate con Foldwise">
+          <div class="folder-organizer-demo" aria-hidden="true">
+            <div class="folder-scene folder-chaos">
+              <div class="folder-window">
+                <div class="folder-titlebar">
+                  <span class="folder-dot red"></span>
+                  <span class="folder-dot yellow"></span>
+                  <span class="folder-dot green"></span>
+                  <strong>Downloads</strong>
+                </div>
+                <div class="messy-files">
+                  <div class="chaos-toolbar">
+                    <span>8 elementi non ordinati</span>
+                    <strong>Downloads</strong>
+                  </div>
+                  <span class="demo-file pdf file-1"><i>PDF</i>invoice.pdf</span>
+                  <span class="demo-file image file-2"><i>IMG</i>photo.png</span>
+                  <span class="demo-file doc file-3"><i>DOC</i>contract.docx</span>
+                  <span class="demo-file zip file-4"><i>ZIP</i>archive.zip</span>
+                  <span class="demo-file sheet file-5"><i>XLS</i>report.xlsx</span>
+                  <span class="demo-file image file-6"><i>IMG</i>screenshot.png</span>
+                  <span class="demo-file pdf file-7"><i>PDF</i>receipt.pdf</span>
+                  <span class="demo-file doc file-8"><i>TXT</i>notes.txt</span>
+                </div>
               </div>
+              <span class="scene-label">Prima</span>
             </div>
-            <div class="organized-stack">
-              <small>Destinazioni ordinate</small>
-              <span>Fatture</span>
-              <span>Screenshot</span>
-              <span>Archivio</span>
+
+            <div class="foldwise-sorter">
+              <img src="assets/foldwise-icon.png" alt="" />
+              <strong>Foldwise</strong>
+              <span>Regole attive</span>
+              <div class="sorter-rules">
+                <em>PDF → Fatture</em>
+                <em>IMG → Immagini</em>
+                <em>DOC → Documenti</em>
+              </div>
+              <div class="sorter-pulse"></div>
+            </div>
+
+            <div class="folder-scene folder-clean">
+              <div class="organized-board">
+                <div class="organized-status">
+                  <span>✓</span>
+                  <div><strong>Cartella ordinata</strong><small>4 regole applicate · log pronto</small></div>
+                </div>
+                <div class="organized-folder invoices"><span>PDF</span><strong>Fatture</strong><small>invoice.pdf · receipt.pdf</small></div>
+                <div class="organized-folder images"><span>IMG</span><strong>Immagini</strong><small>photo.png · screenshot.png</small></div>
+                <div class="organized-folder docs"><span>DOC</span><strong>Documenti</strong><small>contract.docx · notes.txt</small></div>
+                <div class="organized-folder archive"><span>ZIP</span><strong>Archivio</strong><small>archive.zip · report.xlsx</small></div>
+              </div>
+              <span class="scene-label">Dopo</span>
             </div>
           </div>
 
@@ -214,6 +225,260 @@
         </div>
       </section>
 
+      <section id="crea-con-ai" class="section ai-beta-section">
+        <div class="ai-beta-container">
+          <div class="ai-beta-copy">
+            <span class="ai-beta-tag">AI Beta</span>
+            <h2 class="ai-beta-title"><span class="ai-title-text">Crea con AI</span> <span class="title-badge">Beta</span></h2>
+            <p class="ai-beta-lead">
+              Descrivi in parole semplici quello che vuoi fare e Foldwise prepara per te una bozza di regola già pronta da controllare, modificare e salvare.
+            </p>
+            <p class="ai-pro-note">Disponibile con Foldwise Pro.</p>
+            <div class="ai-beta-features">
+              <div class="ai-beta-feat-item">
+                <span class="feat-icon">✦</span>
+                <div>
+                  <strong class="feat-title-1">Richieste in linguaggio naturale</strong>
+                  <p class="feat-desc-1">Basta scrivere richieste naturali come <em>“sposta i PDF con fattura nel nome in Fatture”</em> oppure <em>“rinomina tutti i file aggiungendo la data di oggi”</em>.</p>
+                </div>
+              </div>
+              <div class="ai-beta-feat-item">
+                <span class="feat-icon">✓</span>
+                <div>
+                  <strong class="feat-title-2">Controllo e sicurezza prima di tutto</strong>
+                  <p class="feat-desc-2">È una funzione nuova, in beta, e può ancora commettere errori. Proprio per questo Foldwise non applica nulla alla cieca: prima ti mostra sempre una bozza leggibile, così resti tu ad avere il controllo finale.</p>
+                </div>
+              </div>
+              <div class="ai-beta-feat-item">
+                <span class="feat-icon">↗</span>
+                <div>
+                  <strong class="feat-title-3">Un sistema che cresce con te</strong>
+                  <p class="feat-desc-3">La parte più bella è che cresce con noi. Più la evolviamo, più diventa capace di capire richieste reali, sfumature di linguaggio e casi complessi, mantenendo un approccio locale, pratico e verificabile.</p>
+                </div>
+              </div>
+            </div>
+            <p class="ai-beta-footnote">
+              * "Crea con AI" è una funzione riservata a Foldwise Pro. Per sfruttarla al massimo sono richiesti macOS 26+ e processori Apple Silicon (da M1 in su). Sugli altri dispositivi la funzione è utilizzabile con limitazioni.
+            </p>
+          </div>
+
+          <div class="ai-preview-media">
+            <!-- Simulatore ad alta fedeltà dell'app reale -->
+            <div class="ai-simulator">
+              <!-- Header -->
+              <div class="sim-header">
+                <div class="sim-dots-title-row">
+                  <div class="sim-dots">
+                    <span class="dot close"></span>
+                    <span class="dot minimize"></span>
+                    <span class="dot expand"></span>
+                  </div>
+                  <div class="sim-title-wrapper">
+                    <div class="sparkle-app-icon">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2zM5.5 4.5l1.2 3.8L10.5 9.5l-3.8 1.2L5.5 14.5l-1.2-3.8L0.5 9.5l3.8-1.2z" />
+                      </svg>
+                    </div>
+                    <div class="sim-title">
+                      <span id="ai-sim-title-text">Create rule with AI (Beta)</span>
+                      <span class="pro-badge">PRO</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sim-header-desc" id="ai-sim-header-desc">Describe the automation you want for task. Foldwise prepares a local draft and saves it only when you confirm.</div>
+              </div>
+
+              <!-- Workspace a 2 colonne -->
+              <div class="sim-workspace">
+                <!-- Colonna Sinistra (Input prompt) -->
+                <div class="sim-col-left">
+                  <h3 id="ai-sim-left-title">What do you want to automate?</h3>
+                  <p class="sim-left-desc" id="ai-sim-left-desc">Write as you would speak to a person. You can specify file type, words in the name or content, age, folder, rename, tag, or schedule.</p>
+                  
+                  <div class="sim-warning-box">
+                    <span class="warn-icon">⚠️</span>
+                    <span class="warn-text" id="ai-sim-warning-text">Beta feature: Foldwise can make mistakes. Always review the draft before saving.</span>
+                  </div>
+
+                  <div class="sim-input-box">
+                    <div class="sim-textarea-container">
+                      <div class="sim-textarea-typing" id="ai-prompt-typing"></div>
+                      <span class="cursor">|</span>
+                    </div>
+                  </div>
+
+                  <div class="sim-examples-box">
+                    <h4 id="ai-sim-examples-title">Quick examples</h4>
+                    <div class="sim-example-item" id="ai-sim-example-1">
+                      <span class="example-sparkle">✦</span>
+                      <span id="ai-sim-ex-text-1">Rename all files by adding today's date as a prefix</span>
+                    </div>
+                    <div class="sim-example-item" id="ai-sim-example-2">
+                      <span class="example-sparkle">✦</span>
+                      <span id="ai-sim-ex-text-2">Move all PDFs with invoice in the name to the Invoices folder</span>
+                    </div>
+                  </div>
+
+                  <div class="sim-left-actions">
+                    <button type="button" class="sim-action-btn improve" id="ai-sim-btn-improve" disabled>
+                      <span class="btn-icon">✦</span>
+                      <span id="ai-sim-text-improve">Improve request</span>
+                    </button>
+                    <button type="button" class="sim-action-btn generate" id="ai-sim-btn-generate" disabled>
+                      <span class="btn-icon">✦</span>
+                      <span id="ai-sim-text-generate">Generate draft</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Colonna Destra (Rule draft) -->
+                <div class="sim-col-right" id="ai-sim-col-right">
+                  <div class="sim-right-header">
+                    <h3 id="ai-sim-right-title">Rule draft</h3>
+                    <p class="sim-right-desc" id="ai-sim-right-desc">Review what will be created. You can always edit it later.</p>
+                  </div>
+
+                  <!-- Stato 1: Nessuna bozza -->
+                  <div class="sim-state-empty" id="ai-sim-state-empty">
+                    <div class="empty-icon-wrapper">
+                      <div class="empty-search-icon">
+                        <span class="search-glass">🔍</span>
+                        <span class="empty-sparkle">✦</span>
+                      </div>
+                    </div>
+                    <h4 id="ai-sim-empty-title">No draft yet</h4>
+                    <p id="ai-sim-empty-desc">Foldwise does not run anything automatically: it first creates a readable draft, then you decide whether to save it.</p>
+                  </div>
+
+                  <!-- Stato 2: Caricamento AI -->
+                  <div class="sim-state-loading" id="ai-sim-state-loading">
+                    <div class="spinner"></div>
+                    <p id="ai-sim-loading-text">Processing draft with local AI...</p>
+                  </div>
+
+                  <!-- Stato 3: Regola Generata -->
+                  <div class="sim-state-generated" id="ai-sim-state-generated">
+                    <!-- Local AI Engine -->
+                    <div class="sim-card local-engine">
+                      <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4 4 4 0 0 0 0 .52A5.5 5.5 0 0 0 2.5 12a5.5 5.5 0 0 0 5.5 5.5h8A5.5 5.5 0 0 0 21.5 12a5.5 5.5 0 0 0-5.5-5.5 4 4 0 0 0 0-.52 4 4 0 0 0-4-4Z"></path><path d="M9 12h6"></path><path d="M12 9v6"></path></svg></span>
+                      <div class="card-content">
+                        <div class="card-label" id="ai-sim-card-engine-title">LOCAL AI ENGINE</div>
+                        <div class="card-value" id="ai-sim-card-engine-desc">Foundation Models active: Foldwise is using the full on-device AI available on this Mac.</div>
+                      </div>
+                    </div>
+
+                    <!-- I Understood That -->
+                    <div class="sim-card understood-card" id="ai-sim-card-understood">
+                      <span class="card-icon purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path></svg></span>
+                      <div class="card-content">
+                        <div class="card-label purple" id="ai-sim-card-understood-title">I UNDERSTOOD THAT</div>
+                        <div class="card-value bold" id="ai-sim-card-understood-desc">Every day at 02:00, Foldwise will check all files and then action 1: rename with "{data}_{nome}".</div>
+                        <div class="card-subtext" id="ai-sim-card-understood-sub">Automatic check: you can adjust every detail before saving.</div>
+                        <ul class="understood-checklist" id="ai-sim-card-understood-list">
+                          <!-- Generato da JS -->
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="sim-card name-card">
+                      <span class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="12" y2="18"></line></svg></span>
+                      <div class="card-content">
+                        <div class="card-label blue" id="ai-sim-card-name-title">NAME</div>
+                        <div class="card-value" id="ai-sim-card-name-val">Add today's date to filenames</div>
+                      </div>
+                    </div>
+
+                    <!-- Activation -->
+                    <div class="sim-card activation-card">
+                      <span class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+                      <div class="card-content">
+                        <div class="card-label blue" id="ai-sim-card-act-title">ACTIVATION</div>
+                        <div class="card-value" id="ai-sim-card-act-val">Every day at 02:00</div>
+                      </div>
+                    </div>
+
+                    <!-- Conditions (New) -->
+                    <div class="sim-card conditions-card" id="ai-sim-card-cond-wrapper" style="display: none;">
+                      <span class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg></span>
+                      <div class="card-content">
+                        <div class="card-label blue" id="ai-sim-card-cond-title">CONDITIONS</div>
+                        <div class="card-value" id="ai-sim-card-cond-val">Filters to apply</div>
+                      </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="sim-card actions-card">
+                      <span class="card-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span>
+                      <div class="card-content">
+                        <div class="card-label blue" id="ai-sim-card-actions-title">ACTIONS</div>
+                        <div class="card-value-desc" id="ai-sim-card-actions-desc">Review the action order and adjust the operation type if needed.</div>
+                        
+                        <div class="action-dropdown-box">
+                          <div class="action-select">
+                            <span id="ai-sim-action-type">Rename to</span>
+                            <span class="select-arrows">↕</span>
+                          </div>
+                          <div class="action-input-val" id="ai-sim-action-input-val">{date}_{name}</div>
+                        </div>
+
+                        <!-- Ciano Tags per configuratore -->
+                        <div class="tag-section">
+                          <div class="tag-group">
+                            <span class="tag-group-label" id="ai-sim-tag-base">Base</span>
+                            <div class="tags-list">
+                              <span class="cyan-tag">Today's date</span>
+                              <span class="cyan-tag">Original name</span>
+                              <span class="cyan-tag">Extension</span>
+                            </div>
+                          </div>
+                          <div class="tag-group">
+                            <span class="tag-group-label" id="ai-sim-tag-dates">File dates</span>
+                            <div class="tags-list">
+                              <span class="cyan-tag">Creation date</span>
+                              <span class="cyan-tag">Modification date</span>
+                              <span class="cyan-tag">Modify DD-MM-YYYY</span>
+                            </div>
+                          </div>
+                          <div class="tag-group">
+                            <span class="tag-group-label" id="ai-sim-tag-transform">Transform name</span>
+                            <div class="tags-list">
+                              <span class="cyan-tag">Spaces to undersco...</span>
+                              <span class="cyan-tag">Lowercase</span>
+                              <span class="cyan-tag">Letters and number...</span>
+                              <span class="cyan-tag">Remove IMG_ prefix</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Window Footer -->
+              <div class="sim-footer">
+                <span class="sim-cancel" id="ai-sim-cancel-text">Cancel</span>
+                <div class="sim-footer-right">
+                  <div class="sim-ready-badge" id="ai-sim-ready-badge">
+                    <span class="ready-dot">✓</span>
+                    <span id="ai-sim-ready-text">Ready</span>
+                  </div>
+                  <button type="button" class="sim-create-btn" id="ai-sim-btn-create" disabled>
+                    <span class="btn-icon">✓</span>
+                    <span id="ai-sim-text-create">Create rule</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- SE SI VUOLE METTERE UNA GIF SUCCESSIVAMENTE:
+                 Nascondere o rimuovere il div .ai-simulator sopra, de-commentare il tag img sotto e inserire la GIF.
+            <img src="assets/crea-con-ai.gif" alt="Crea con AI Demo" class="ai-gif-media" style="display: none;">
+            -->
+          </div>
+        </div>
+      </section>
+
       <section id="privacy" class="section privacy">
         <div class="privacy-panel">
           <div class="privacy-panel-head">
@@ -266,7 +531,7 @@
       <section id="gallery" class="section gallery">
         <div class="gallery-heading">
           <h2>Foldwise, visto da vicino.</h2>
-          <p>Una gallery essenziale e reale: dashboard completa, cartelle, regole e cronologia. Premi una schermata per aprirla a piena dimensione.</p>
+          <p>Schermate reali dell'app: dashboard, Crea con AI, analisi locale, regole e cronologia. Premi una schermata per aprirla a piena dimensione.</p>
         </div>
         <div class="gallery-grid" aria-label="Gallery Foldwise">
           <button class="gallery-main gallery-item" type="button" data-gallery-src="assets/foldwise-app-home.png" data-gallery-title="Dashboard completa" data-gallery-caption="Cartelle, regole e cronologia nello stesso spazio operativo.">
@@ -274,6 +539,14 @@
             <div class="gallery-caption">
               <strong>Dashboard completa</strong>
               <span>Cartelle, regole e cronologia in un unico spazio operativo.</span>
+            </div>
+            <em>Apri</em>
+          </button>
+          <button class="gallery-feature gallery-item shot-create-ai" type="button" data-gallery-src="assets/foldwise-create-with-ai.png" data-gallery-title="Crea con AI" data-gallery-caption="La funzione Pro trasforma una richiesta in linguaggio naturale in una bozza di regola verificabile prima del salvataggio.">
+            <img src="assets/foldwise-create-with-ai.png" alt="Schermata Crea con AI di Foldwise con bozza regola pronta da verificare" />
+            <div class="gallery-caption">
+              <strong>Crea con AI</strong>
+              <span>Da richiesta naturale a bozza verificabile.</span>
             </div>
             <em>Apri</em>
           </button>
@@ -322,7 +595,7 @@
               <li>Azioni essenziali: sposta e cestina</li>
               <li>Perfetta per provare il workflow reale</li>
             </ul>
-            <a class="button secondary download-button" href="https://github.com/frafra077/Foldwise/releases/download/v.1.0.2/Foldwise.1.0.2.dmg">Download gratuito</a>
+            <a class="button secondary download-button" href="https://github.com/frafra077/Foldwise/releases/download/v.1.1.0/Foldwise.1.1.0.dmg">Download gratuito</a>
           </article>
           <article class="plan pro">
             <div class="offer-banner">Offerta lancio</div>
@@ -338,7 +611,7 @@
             <ul>
               <li>Cartelle e regole senza limiti</li>
               <li>Copia, rinomina, tag, script e azioni avanzate</li>
-              <li>AI locale privata e log completo</li>
+              <li>Crea con AI, AI locale privata e log completo</li>
               <li>Interfaccia multilingue: italiano, inglese e francese</li>
               <li>Aggiornamenti futuri inclusi, fino a 2 Mac</li>
             </ul>
@@ -374,7 +647,7 @@
             </details>
             <details>
               <summary>Che cosa sblocca Foldwise Pro?</summary>
-              <p>Pro rimuove i limiti su cartelle e regole, abilita azioni avanzate come copia, rinomina, tag e script, include AI locale privata e log completo.</p>
+              <p>Pro rimuove i limiti su cartelle e regole, abilita azioni avanzate come copia, rinomina, tag e script, include Crea con AI, AI locale privata e log completo.</p>
             </details>
             <details>
               <summary>La licenza e' un abbonamento?</summary>
@@ -453,6 +726,7 @@
         <div class="footer-col">
           <span class="footer-col-title">Prodotto</span>
           <a href="#funzioni">Funzioni</a>
+          <a href="#crea-con-ai"><span class="footer-ai-text">Crea con AI</span> <span class="nav-badge">Beta</span></a>
           <a href="#gallery">Gallery</a>
           <a href="#download">Download</a>
           <a href="#privacy">Privacy</a>
